@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import br.com.zupacademy.erivelton.transacao.entidade.Cartao;
 
 @Repository
-public interface CartaoRepositorio extends JpaRepository<Cartao, UUID>{
+public interface CartaoRepositorio extends JpaRepository<Cartao, Long>{
 
 	boolean existsByNumero(String numero);
 

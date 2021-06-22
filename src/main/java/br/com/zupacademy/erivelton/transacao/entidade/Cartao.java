@@ -33,4 +33,8 @@ public class Cartao {
 	public String getNumero() {
 		return numero;
 	}
+	
+	public String getEmail() {
+		return email;
+	}
 }
