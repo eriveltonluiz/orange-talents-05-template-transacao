@@ -1,7 +1,5 @@
 package br.com.zupacademy.erivelton.transacao.repositorio;
 
-import java.util.UUID;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -12,5 +10,5 @@ public interface CartaoRepositorio extends JpaRepository<Cartao, Long>{
 
 	boolean existsByNumero(String numero);
 
-	Cartao getByNumero(String numero);
+	Cartao findByNumero(String numero);
 }

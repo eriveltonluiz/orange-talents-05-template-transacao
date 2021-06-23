@@ -47,8 +47,6 @@ services:
       - jaeger
       - kafka
       - zookeeper
-      - contas
-      - analise
       - transacoes
       - postgres
     environment:

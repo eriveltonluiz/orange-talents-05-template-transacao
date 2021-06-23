@@ -28,7 +28,7 @@ public class ListenerDeTransacao {
 		if (!cartaoRepositorio.existsByNumero(cartao.getNumero())) {
 			cartaoRepositorio.save(cartao);
 		} else {
-			cartao = cartaoRepositorio.getByNumero(cartao.getNumero());
+			cartao = cartaoRepositorio.findByNumero(cartao.getNumero());
 		}
 
 		Transacao transacao = requisicao.paraEntidade(cartao);
